@@ -12,7 +12,8 @@ const platforms = [
   {
     id: 1,
     name: "بله",
-    icon: MessageSquare,
+    icon: "/brands/bale.png",
+    // icon: MessageSquare,
     category: "پیام‌رسان",
     website: "bale.ai",
     alternatives: ["واتس‌اپ", "تلگرام"],
@@ -22,7 +23,8 @@ const platforms = [
   {
     id: 2,
     name: "دیجی‌کالا",
-    icon: ShoppingCart,
+    icon: "/brands/digikala.png",
+    // icon: ShoppingCart,
     category: "فروشگاه",
     website: "digikala.com",
     alternatives: ["آمازون", "eBay"],
@@ -32,7 +34,8 @@ const platforms = [
   {
     id: 3,
     name: "آپارات",
-    icon: Video,
+    icon: "/brands/aparat.png",
+    // icon: Video,
     category: "ویدیو",
     website: "aparat.com",
     alternatives: ["یوتیوب", "Vimeo"],
@@ -41,27 +44,30 @@ const platforms = [
   },
   {
     id: 4,
-    name: "مهربان",
-    icon: Music,
+    name: "ملودیفای",
+    icon: "/brands/melodifi.png",
+    // icon: Music,
     category: "موسیقی",
-    website: "mehrban.com",
+    website: "melodify.app",
     alternatives: ["اسپاتیفای", "اپل موزیک"],
     description:
-      "پلتفرم پخش موسیقی آنلاین ایرانی با کتابخانه گسترده موسیقی ایرانی و جهانی و امکان دانلود و پخش آفلاین.",
+      "ملودیفای پلتفرم مرجع پخش و دانلود آهنگ‌های ایرانی و خارجی است",
   },
   {
     id: 5,
-    name: "پارسی‌جو",
-    icon: Search,
+    name: "گردو",
+    icon: "/brands/gerdoo.png",
+    // icon: Search,
     category: "جستجو",
-    website: "parsijoo.ir",
+    website: "gerdoo.me",
     alternatives: ["گوگل", "بینگ"],
-    description: "موتور جستجوی ایرانی با تمرکز بر محتوای فارسی و نتایج بومی‌سازی شده برای کاربران ایرانی.",
+    description: "گردو یک فراجستجوگر است که مطابق نیاز کاربران فارسی‌زبان محتوای خود را ارائه می‌دهد که به مرور در حال تبدیل‌شدن به یک موتور جستجوی مستقل است",
   },
   {
     id: 6,
     name: "نشان",
-    icon: Map,
+    icon: "/brands/neshan.png",
+    // icon: Map,
     category: "نقشه",
     website: "neshan.org",
     alternatives: ["گوگل مپس", "Waze"],
@@ -69,22 +75,249 @@ const platforms = [
   },
   {
     id: 7,
+    name: "بلد",
+    icon: "/brands/balad.png",
+    // icon: Map,
+    category: "نقشه",
+    website: "balad.ir",
+    alternatives: ["گوگل مپس", "Waze"],
+    description: "سرویس نقشه و مسیریابی ایرانی با اطلاعات دقیق محلی، ترافیک لحظه‌ای و پشتیبانی از آدرس‌های ایرانی.",
+  },
+  {
+    id: 8,
     name: "ابرآروان",
-    icon: Cloud,
+    icon: "/brands/arvan.png",
+    // icon: Cloud,
     category: "ذخیره‌سازی",
     website: "arvancloud.com",
     alternatives: ["AWS", "Cloudflare"],
     description: "سرویس ابری و CDN ایرانی با زیرساخت قدرتمند داخلی برای میزبانی وب، ذخیره‌سازی و توزیع محتوا.",
   },
   {
-    id: 8,
-    name: "چاپار",
-    icon: Mail,
-    category: "ایمیل",
-    website: "chapar.ir",
-    alternatives: ["جیمیل", "یاهو"],
-    description: "سرویس ایمیل ایرانی با امکانات امنیتی پیشرفته، رابط کاربری فارسی و فضای ذخیره‌سازی مناسب.",
+    id: 9,
+    name: "ایتا",
+    icon: "/brands/eitaa.svg",
+    category: "پیام‌رسان",
+    website: "eitaa.com",
+    alternatives: ["تلگرام"],
+    description: "ایتا یک پیام‌رسان ایرانی با قابلیت چت، تماس صوتی، کانال، گروه و امکانات متنوع دیگر برای کاربران ایرانی."
+  },  
+
+  {
+    id: 10,
+    name: "مکتب‌خونه",
+    icon: "/brands/maktabkhooneh.svg",
+    // icon: Mail,
+    category: "آموزش",
+    website: "maktabkhooneh.org",
+    alternatives: ["یوتیوب", "یودمی"],
+    description: "سایت مکتب‌خونه یک پلتفرم آموزشی آنلاین است که دوره‌های متنوعی در زمینه‌های مختلف علمی، مهارتی و تخصصی به زبان فارسی ارائه می‌دهد.",
   },
+  {
+    id: 11,
+    name: "فرادرس",
+    icon: "/brands/faradars.svg",
+    // icon: Mail,
+    category: "آموزش",
+    website: "faradars.org",
+    alternatives: ["یوتیوب", "یودمی"],
+    description: "سایت فرادرس یک پلتفرم آموزشی آنلاین است که دوره‌های متنوعی در زمینه‌های مختلف علمی، مهارتی و تخصصی به زبان فارسی ارائه می‌دهد.",
+  },
+  {
+    id: 12,
+    name: "کافه‌بازار",
+    icon: "/brands/bazaar.png",
+    category: "اندروید",
+    website: "cafebazaar.ir",
+    alternatives: ["Google Play", "App Store"],
+    description: "بازار یک مارکت اندرویدی ایرانی است که امکان دانلود و خرید اپلیکیشن‌های مختلف را برای کاربران فراهم می‌کند."
+  },
+  {
+    id: 13,
+    name: "فیلیمو",
+    icon: "/brands/filimo.svg",
+    category: "ویدیو",
+    website: "filimo.com",
+    alternatives: ["Netflix", "Disney+"] ,
+    description: "پلتفرم پخش آنلاین فیلم و سریال ایرانی و خارجی با آرشیوی گسترده و اشتراک ویژه."
+  },
+  {
+    id: 14,
+    name: "نماوا",
+    icon: "/brands/namava.svg",
+    category: "ویدیو",
+    website: "namava.ir",
+    alternatives: ["Netflix", "Disney+"],
+    description: "خدمات پخش آنلاین فیلم و سریال با دسترسی به محتوای داخلی و خارجی."
+  },
+  {
+    id: 15,
+    name: "آیگپ",
+    icon: "/brands/igap.svg",
+    category: "پیام‌رسان",
+    website: "igap.net",
+    alternatives: ["تلگرام", "واتس‌اپ"],
+    description: "آیگپ یک پیام‌رسان ایرانی با امکاناتی مانند چت، تماس صوتی و تصویری، کانال، گروه و خدمات مالی دیجیتال."
+  },
+  {
+    id: 16,
+    name: "ویراستی",
+    icon: "/brands/virasty.png",
+    category: "شبکه اجتماعی",
+    website: "virasty.com",
+    alternatives: ["توییتر", "Threads"],
+    description: "ویراستی یک شبکه اجتماعی ایرانی مبتنی بر متن است که امکان انتشار نوشته‌ها، تعامل با کاربران و دنبال‌کردن موضوعات مورد علاقه را فراهم می‌کند."
+  },
+  {
+    id: 17,
+    name: "سروش‌پلاس",
+    icon: "/brands/soroush.svg",
+    category: "پیام‌رسان",
+    website: "sapp.ir",
+    alternatives: ["تلگرام", "واتس‌اپ"],
+    description: "سروش‌پلاس یک پیام‌رسان ایرانی با قابلیت چت، تماس صوتی و تصویری، کانال، گروه و خدمات پرداخت درون‌برنامه‌ای است."
+  },
+  {
+    id: 18,
+    name: "گپ",
+    icon: "/brands/gap.png",
+    category: "پیام‌رسان",
+    website: "gap.im",
+    alternatives: ["تلگرام", "واتس‌اپ"],
+    description: "گپ یک پیام‌رسان ایرانی است که خدماتی همچون چت، تماس صوتی و تصویری، ایجاد گروه‌ها و کانال‌ها، و همچنین قابلیت پرداخت درون‌برنامه‌ای را ارائه می‌دهد."
+  },
+  {
+    id: 19,
+    name: "شنوتو",
+    icon: "/brands/shenoto.png",
+    category: "موسیقی",
+    website: "shenoto.com",
+    alternatives: ["کست‌باکس", "اسپاتیفای","اپل موزیک"],
+    description: "شنوتو یک پلتفرم ایرانی برای گوش دادن به پادکست‌ها است که امکان اشتراک‌گذاری، دنبال کردن برنامه‌ها و دسترسی به محتوای متنوع صوتی را فراهم می‌کند."
+  },
+  {
+    id: 20,
+    name: "مایکت",
+    icon: "/brands/myket.svg",
+    category: "اندروید",
+    website: "myket.ir",
+    alternatives: ["گوگل‌پلی", "اپ‌استور"],
+    description: "مایکت یک مارکت اندرویدی ایرانی است که امکان دانلود و خرید اپلیکیشن‌های مختلف را برای کاربران فراهم می‌کند."
+  },
+  {
+    id: 21,
+    name: "ویرگول",
+    icon: "/brands/virgool.png",
+    category: "نوشتن",
+    website: "virgool.io",
+    alternatives: ["مدیوم"],
+    description: "ویرگول یک پلتفرم ایرانی برای انتشار مقالات، یادداشت‌ها و محتوای نوشتاری است که امکان اشتراک‌گذاری آسان و تعامل با نویسندگان را فراهم می‌کند."
+  },
+  {
+    id: 22,
+    name: "ایران‌تلنت",
+    icon: "/brands/irantalent.svg",
+    category: "استخدام",
+    website: "irantalent.com",
+    alternatives: ["لینکدین"],
+    description: "ایران‌تلنت یک پلتفرم ایرانی برای جستجوی فرصت‌های شغلی و استخدام است که به کارجویان کمک می‌کند تا به راحتی با شرکت‌های مختلف ارتباط برقرار کنند."
+  },
+  {
+    id: 23,
+    name: "نواک",
+    icon: "/brands/navaak.png",
+    category: "موسیقی",
+    website: "navaak.com",
+    alternatives: ["اسپاتیفای","اپل موزیک","کست‌باکس"],
+    description: "نواک یک سرویس پخش آنلاین موسیقی در ایران شامل هزاران قطعه موسیقی، ویدیو کلیپ (نماهنگ)، ریمیکس و پادکست قابل استفاده در وب، اندروید و iOS می‌باشد."
+  },
+  {
+    id: 24,
+    name: "آپارات گیم",
+    icon: "/brands/aparat.png",
+    category: "پخش ویدیو بازی",
+    website: "https://game.aparat.com",
+    alternatives: ["Twitch", "یوتیوب"],
+    description: "آپارات گیم یک سرویس پخش آنلاین ویدیو بازی در ایران است که امکان تماشای استریم‌های زنده و ویدیوهای مربوط به بازی‌های مختلف را فراهم می‌کند."
+  },
+  {
+    id: 25,
+    name: "جاب ویژن",
+    icon: "/brands/jobvision.png",
+    category: "استخدام",
+    website: "jobvision.ir",
+    alternatives: ["لینکدین"],
+    description: "جاب ویژن یک پلتفرم آنلاین استخدام در ایران است که به کارجویان و شرکت‌ها این امکان را می‌دهد که به راحتی فرصت‌های شغلی را پیدا کرده و استخدام کنند."
+  },
+  {
+    id: 26,
+    name: "رایچت",
+    icon: "/brands/raychat.png",
+    category: "خدمات",
+    website: "raychat.io",
+    alternatives: ["Crisp", "Zendesk"],
+    description: "رایچت یک پلتفرم چت آنلاین ایرانی است که به کسب‌وکارها این امکان را می‌دهد تا به‌راحتی با مشتریان خود ارتباط برقرار کنند و پشتیبانی زنده ارائه دهند."
+  },
+  {
+    id: 27,
+    name: "تماشا",
+    icon: "/brands/tamasha.svg",
+    category: "ویدیو",
+    website: "tamasha.com",
+    alternatives: ["یوتیوب", "Twitch"],
+    description: "تماشا یک پلتفرم ایرانی برای تماشای ویدیوهای آنلاین است که شامل فیلم، سریال، مستند و برنامه‌های تلویزیونی مختلف می‌باشد."
+  },
+  {
+    id: 28,
+    name: "نماشا",
+    icon: "/brands/namasha.svg",
+    category: "ویدیو",
+    website: "namasha.com",
+    alternatives: ["یوتیوب", "Twitch"],
+    description: "نماشا یک پلتفرم ایرانی برای تماشای ویدیوهای آنلاین است که امکان مشاهده ویدیوهای مختلف شامل فیلم، سریال و کلیپ‌های کوتاه را فراهم می‌کند."
+  },
+  {
+    id: 29,
+    name: "لنز",
+    icon: "/brands/lenz.svg",
+    category: "پلتفرم ویدیو",
+    website: "lenz.ir",
+    alternatives: ["Netflix", "Disney+"],
+    description: "لنز یک سرویس پخش ویدیو ایرانی است که امکان مشاهده فیلم، سریال، برنامه‌های تلویزیونی و ویدیوهای مختلف را به کاربران می‌دهد."
+  },
+  {
+    id: 30,
+    name: "روبیکا",
+    icon: "/brands/rubika.webp",
+    category: "شبکه اجتماعی",
+    website: "rubika.ir",
+    alternatives: ["تلگرام", "واتس‌اپ","اینستاگرام"],
+    description: "روبیکا یک اپلیکیشن ایرانی چندمنظوره است که شامل خدمات مختلفی از جمله پیام‌رسانی، تماشای ویدیو، پرداخت آنلاین، خرید و فروش، و بازی‌های آنلاین می‌باشد."
+  },
+  {
+    id: 31,
+    name: "زبان شناس",
+    icon: "/brands/zabanshenas.svg",
+    category: "یادگیری زبان",
+    website: "zabanshenas.com",
+    alternatives: ["Duolingo", "Memrise"],
+    description: "زبان شناس یک پلتفرم ایرانی برای یادگیری زبان‌های خارجی است که دوره‌های مختلف و ابزارهای متنوعی برای تقویت مهارت‌های زبانی ارائه می‌دهد."
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 ]
 
 // Get unique categories
@@ -224,7 +457,7 @@ export default function IranianPlatformsLanding() {
                 <CardHeader className="pb-0">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <platform.icon className="h-10 w-10 text-primary" />
+                      <img src={platform.icon}  className="h-10 w-10 text-primary rounded-lg" />
                       <CardTitle>{platform.name}</CardTitle>
                     </div>
                     <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
