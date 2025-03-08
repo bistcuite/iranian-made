@@ -18,6 +18,8 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+    loader: 'custom',
+    loaderFile: './loader.js',
   },
   experimental: {
     webpackBuildWorker: true,
