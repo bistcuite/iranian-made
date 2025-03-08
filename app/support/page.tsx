@@ -153,12 +153,14 @@ export default function SupportPage() {
                       <p className="text-sm text-muted-foreground mb-3">
                         اگر با پلتفرم ایرانی آشنا هستید که در سایت ما معرفی نشده، آن را به ما معرفی کنید.
                       </p>
+                      <Link href="https://daramet.com/hasan">
                       <Button variant="outline" className="w-full">
                         معرفی پلتفرم
                       </Button>
+                      </Link>
                     </div>
 
-                    <div className="rounded-lg border p-4">
+                    {/* <div className="rounded-lg border p-4">
                       <h3 className="font-medium mb-2">اشتراک‌گذاری</h3>
                       <p className="text-sm text-muted-foreground mb-3">
                         با اشتراک‌گذاری این سایت در شبکه‌های اجتماعی، به شناخته شدن پلتفرم‌های ایرانی کمک کنید.
@@ -173,7 +175,7 @@ export default function SupportPage() {
                           اینستاگرام
                         </Button>
                       </div>
-                    </div>
+                    </div> */}
 
                     <div className="rounded-lg border p-4">
                       <h3 className="font-medium mb-2">مشارکت در کد</h3>

@@ -380,7 +380,7 @@ export default function IranianPlatformsLanding() {
             </div>
           </div>
           <div className="flex justify-center">
-            <img src="/hero.svg?height=400&width=400" alt="پلتفرم‌های ایرانی" className="max-w-full h-auto" />
+            <img src="/iranian-made/hero.svg?height=400&width=400" alt="پلتفرم‌های ایرانی" className="max-w-full h-auto" />
           </div>
         </div>
       </section>
@@ -457,7 +457,7 @@ export default function IranianPlatformsLanding() {
                 <CardHeader className="pb-0">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                      <img src={platform.icon}  className="h-10 w-10 text-primary rounded-lg" />
+                      <img src={`/iranian-made/${platform.icon}`}  className="h-10 w-10 text-primary rounded-lg" />
                       <CardTitle>{platform.name}</CardTitle>
                     </div>
                     <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
