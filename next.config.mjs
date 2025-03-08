@@ -4,10 +4,12 @@ try {
 } catch (e) {
   // ignore error
 }
-
+let repoName = 'iranian-made'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output:"export",
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
   eslint: {
     ignoreDuringBuilds: true,
   },
